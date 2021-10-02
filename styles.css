@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
