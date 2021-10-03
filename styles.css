@@ -25,7 +25,7 @@ body, html {
   padding: 14px 16px;
 }
 
-.menuButton a:hover, a:active {
+.menuButton a:hover, .menuButton a:active {
   background-color: #a2e5fa;
 }
 
@@ -39,6 +39,15 @@ body, html {
   background-color: rgba(0, 0, 0, .3);
   backdrop-filter: blur(10px);
   width: 100%;
+
+  z-index:10;
+  position: fixed;
+  top: 0;
+}
+
+#thispage {
+  background-color: #a2e5fa;
+  padding: 14px 0px;
 }
 
 /* ****************************************************** */
@@ -49,16 +58,21 @@ body, html {
 
 .videoContent {
   display: flex;
-  /* height: 100%; */
-  padding: 5%;
-  margin: 10%;
-  align-items: center;
+  /* flex-direction: column; */
+  /* height: 80%; */
+  /* width: 100%; */
   justify-content: center;
+  align-items: center;
+  /* align-content: center; */
 
-  border-radius: 25px;
-
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
   background-color: rgba(255, 255, 255, .3);
   backdrop-filter: blur(10px);
+  border-radius: 25px;
 }
 
 /* ****************************************************** */
